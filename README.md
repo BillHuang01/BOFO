@@ -1,1 +1,8 @@
 # BOFO
+This repository provides the code of our recent paper "Bayesian Optimization of Functional Output in Inverse Problems" submitted to the *Optimization and Engineering* special issue on *"Optimization Methods in Inverse Problems and Applications to Science and Engineering"*.
+
+The ```data/``` directory contains the experimental data of the VPI process collected by [Ren et al. (2021)][1], including both the 8.7 Torr and 10.5 Torr experiments. The ```scripts/``` directory contains the code ```fbo.R	``` for our proposed BOFO, *Bayesian Optimization of Functional Output*, along with the three other comparison methods, ```random.R``` for random sampling, ```sbo.R``` for standard Bayesian optimization, and ```sbo_log.R``` for Bayesian optimization with log Normal predictive distribution. The numerical comparison of the aforementioned approaches on the synthetic examples can be found in ```comparison.R```. Last, ```TMA_PMMA.m``` is the MATLAB code for the reaction-diffusion model of the VPI process proposed in [Ren et al. (2021)][1]. See [Reaction Diffusion Model][2] github repository for more details. Last, ```results/``` directory contains selected results, including the maxpro design ```maxpro_design.csv``` by ```scripts/maxpro.R```, the best design ```best_design.txt``` found by BOFO, the 8.7 Torr outcome by the best design ```best_design_8.7Torr.txt```, and the 10.5 Torr outcome by the best design ```best_design_10.5Torr.txt```.
+
+
+[1]:https://pubs.acs.org/doi/10.1021/acs.chemmater.1c01283
+[2]:https://github.com/yren48/Reaction_Diffusion_Model
